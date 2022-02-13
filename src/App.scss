@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.book__list{
+display: flex;
+justify-content: center;
+list-style-type: none;
+flex-wrap: wrap;
+}
+.book__item{
+  margin: 50px;
+  width: 220px;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba($color: #ffff, $alpha: .1);
+  box-shadow: 2px 2px 10px #fff;
+  border: 1px solid rgba($color: #fff, $alpha: .8); 
+}
+.book_num, .book_sort{
+  margin-right: 20px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  transition: .3s;
+  cursor: pointer;
+  &:hover{
+    background-color: rgba($color: #fff, $alpha: .1);
+  }
+}
+option{
+  color: #000;
+}
+.btn{
+  margin-right: 5px;
+  padding: 5px 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: .3s;
+  cursor: pointer;
+  &:hover{
+    background-color: rgba($color: #fff, $alpha: .1);
+  }
+  &_group{
+    margin-top: 10px;
+  }
+}

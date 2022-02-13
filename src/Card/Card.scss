@@ -1,0 +1,30 @@
+.card{
+    &_title{
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 24px;
+        height: 60px;
+        text-align: left;
+
+    }
+    &_author{
+        font-size: 16px;
+        color: rgba($color: #fff, $alpha: .5);
+        width: 200px;
+        height: 40px;
+        display: block;
+        text-align: left;
+    }
+    &_desc{
+        text-align: left;
+        height: 150px;
+    }
+    &_price{
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        color: #000;
+        background-color: #FDEFF4;
+        border-radius: 8px;
+    }
+}
