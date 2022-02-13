@@ -10,7 +10,7 @@ function App() {
   const [ pageNum, setPageNum] = useState([])
   const [ sort, setSort] = useState('name')
   useEffect(()=>{
-    fetch(`http://localhost:7007/?limit=${limit}&page=${page}&sort=${sort}`)
+    fetch(`https://library1216.herokuapp.com/?limit=${limit}&page=${page}&sort=${sort}`)
     .then(res => res.json())
     .then(data=>{
       console.log(data);
